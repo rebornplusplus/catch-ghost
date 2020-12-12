@@ -1,6 +1,10 @@
 #ifndef __def__
 #define __def__
 
+// #ifndef PARTICLE
+// #define PARTICLE
+// #endif
+
 #include <bits/stdc++.h>
 
 using namespace std;

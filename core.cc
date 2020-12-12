@@ -1,11 +1,15 @@
 #include "def.h"
-#include "board.h"
 #include "ghost.h"
+#ifdef PARTICLE
+#include "particle.h"
+#else
+#include "board.h"
+#endif
 
 void reset(int n) {
 	grid::n = n;
 	board = board_t(n);
-	ghost = ghost_t();
+	ghost = ghost_t(n);
 	
 	board.print();
 	fflush(stdout);

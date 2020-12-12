@@ -1,16 +1,19 @@
 #ifndef __ghost__
 #define __ghost__
 
+#ifndef __def__
 #include "def.h"
+#endif
 
 class ghost_t {
 	int x, y;
+	bool dummy;
 
 public:
 
-	ghost_t() {
-		x = uniform_int_distribution<int>(0, board.n - 1)(rng);
-		y = uniform_int_distribution<int>(0, board.n - 1)(rng);
+	ghost_t(int n, bool dummy = false) : dummy(dummy) {
+		x = rng() % n;
+		y = rng() % n;
 	}
 	
 	void move() {
@@ -46,6 +49,16 @@ public:
 	bool bust(int i, int j) {
 		return i == x and j == y;
 	}
-} ghost;
+
+	void get_pos(int& i, int& j) {
+		assert(dummy);
+		i = x, j = y;
+	}
+
+	void set_pos(int i, int j) {
+		assert(dummy);
+		x = i, y = j;
+	}
+} ghost(9);
 
 #endif
