@@ -61,9 +61,6 @@ void listen() {
 	else if(qtype == "QUIT") {
 		exit(0) ;
 	}
-	else {
-		assert(false);
-	}
 }
 
 void test() {

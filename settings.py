@@ -1,0 +1,43 @@
+# all the constants
+
+TITLE = "Catch the Ghost!"
+WIDTH = 800
+HEIGHT = 600
+FPS = 60
+FONT_NAME = 'Ubuntu'
+FONT_SZ = 12
+
+# Gameplay
+AI_V_AI = False
+AI_V_HUMAN = False
+AI_TURNSTR = "WHITE"
+
+# Board properites
+GRID_SZ = 9
+PLAYER_RADIUS = 25
+OFFSET = (HEIGHT - GRID_SZ * PLAYER_RADIUS * 2) // 2
+
+# Game layers
+PLAYER_LAYER = 2
+HL_LAYER = 1
+BG_LAYER = 0
+
+# define colors
+WHITE = (255, 255, 255)
+BLACK = (0, 0, 0)
+RED = (255, 0, 0)
+GREEN = (0, 255, 0)
+DARKGREEN = (0, 127, 0)
+ORANGE = (255, 165, 0)
+DARKORANGE = (255, 120, 0)
+BLUE = (0, 0, 255)
+NAVY = (0, 0, 128)
+YELLOW = (255, 255, 0)
+LIGHTBLUE = (0, 155, 155)
+DARKYELLOW = (222, 154, 66)
+LIGHTYELLOW = (231, 186, 132)
+BGYELLOW = (222, 206, 156)
+BGCOLOR = BGYELLOW
+AZURE = (240, 255, 255)
+OLIVE = (128, 128, 0)
+TEST = (119, 136, 153)
